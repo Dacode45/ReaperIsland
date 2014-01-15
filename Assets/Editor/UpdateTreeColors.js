@@ -10,7 +10,7 @@ static function RebuildWithLightmap () {
 		}
 		
 		Undo.RegisterUndo(Terrain.activeTerrain.terrainData, "Set Tree colors");
-		UnityEditor.TerrainLightmapper.UpdateTreeLightmapColor(tex, Terrain.activeTerrain.terrainData);
+		//UnityEditor.TerrainLightmapper.UpdateTreeLightmapColor(tex, Terrain.activeTerrain.terrainData);
 	}
 	else
 		EditorUtility.DisplayDialog("Select a lightmap", "Select a lightmap", "Ok");
@@ -28,7 +28,7 @@ static function RebuildWithColor () {
 		}
 		
 		Undo.RegisterUndo(Terrain.activeTerrain.terrainData, "Set Tree colors");
-		UnityEditor.TerrainLightmapper.UpdateTreeColor(tex, Terrain.activeTerrain.terrainData);
+//		UnityEditor.TerrainLightmapper.UpdateTreeColor(tex, Terrain.activeTerrain.terrainData);
 	}
 	else
 		EditorUtility.DisplayDialog("Select a lightmap", "Select a lightmap", "Ok");

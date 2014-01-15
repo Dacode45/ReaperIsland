@@ -20,7 +20,7 @@ function Awake() {
 	if(!waterLevel)
 	{
 		water = FindObjectOfType(Water);
-		if(water) waterLevel = water.gameObject;
+		if(water != null) waterLevel = water.gameObject.transform.position.y;
 	}
 	aColor = RenderSettings.fogColor;
 	aDensity = RenderSettings.fogDensity;
