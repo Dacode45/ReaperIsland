@@ -46,12 +46,17 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\GameObjectList.cs" />
+     <Compile Include="Assets\ReaperGui\RIWindowDisplay.cs" />
+     <Compile Include="Assets\ReaperGui\RInventoryDisplay.cs" />
+     <Compile Include="Assets\ReaperGui\RInventoryDisplay1.cs" />
      <Compile Include="Assets\Scripts\CombineChildren.cs" />
      <Compile Include="Assets\Scripts\MeshCombineUtility.cs" />
      <None Include="Assets\Pro Standard Assets\Glass Refraction\Glass-Stained-BumpDistort.shader" />
      <None Include="Assets\Pro Standard Assets\Image Based\NoiseEffectShaderRGB.shader" />
      <None Include="Assets\Standard Assets\Blob-Shadow\ShadowProjection.shader" />
      <None Include="Assets\seaFoamCoast\foamShaderGlow.shader" />
+     <None Include="Assets\Standard Assets\Inventory\Credits + C#.txt" />
      <None Include="Assets\Pro Standard Assets\Image Based\MotionBlur.shader" />
      <None Include="Assets\Pro Standard Assets\Image Based\Contrast Stretch\MinMaxReduction.shader" />
      <None Include="Assets\Scripts\Particle Alpha Blend goodfog.shader" />

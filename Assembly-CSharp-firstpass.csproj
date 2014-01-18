@@ -70,6 +70,7 @@
      <None Include="Assets\Pro Standard Assets\Image Based\NoiseEffectShaderRGB.shader" />
      <None Include="Assets\Standard Assets\Blob-Shadow\ShadowProjection.shader" />
      <None Include="Assets\seaFoamCoast\foamShaderGlow.shader" />
+     <None Include="Assets\Standard Assets\Inventory\Credits + C#.txt" />
      <None Include="Assets\Pro Standard Assets\Image Based\MotionBlur.shader" />
      <None Include="Assets\Pro Standard Assets\Image Based\Contrast Stretch\MinMaxReduction.shader" />
      <None Include="Assets\Scripts\Particle Alpha Blend goodfog.shader" />

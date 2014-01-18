@@ -49,6 +49,18 @@
      <Compile Include="Assets\Standard Assets\Camera Scripts\MouseOrbit.js" />
      <Compile Include="Assets\Standard Assets\Camera Scripts\SmoothFollow.js" />
      <Compile Include="Assets\Standard Assets\Camera Scripts\SmoothLookAt.js" />
+     <Compile Include="Assets\Standard Assets\Inventory\Resources\Editor\InventoryEditor.js" />
+     <Compile Include="Assets\Standard Assets\Inventory\Scripts\Character.js" />
+     <Compile Include="Assets\Standard Assets\Inventory\Scripts\Inventory.js" />
+     <Compile Include="Assets\Standard Assets\Inventory\Scripts\InventoryDisplay.js" />
+     <Compile Include="Assets\Standard Assets\Inventory\Scripts\Items\EquipmentEffect.js" />
+     <Compile Include="Assets\Standard Assets\Inventory\Scripts\Items\FirstPersonPickUp.js" />
+     <Compile Include="Assets\Standard Assets\Inventory\Scripts\Items\Item.js" />
+     <Compile Include="Assets\Standard Assets\Inventory\Scripts\Items\ItemEffect.js" />
+     <Compile Include="Assets\Standard Assets\Inventory\Scripts\Other\ChangeScene.js" />
+     <Compile Include="Assets\Standard Assets\Inventory\Scripts\Other\InvAudio.js" />
+     <Compile Include="Assets\Standard Assets\Inventory\Scripts\Other\InvPauseGame.js" />
+     <Compile Include="Assets\Standard Assets\Inventory\Scripts\Other\WeaponSwitch.js" />
      <Compile Include="Assets\Standard Assets\Scripts\DragRigidbody.js" />
      <Compile Include="Assets\Standard Assets\Scripts\FPSWalker.js" />
      <Compile Include="Assets\Standard Assets\Scripts\TimedObjectDestructor.js" />
@@ -56,6 +68,7 @@
      <None Include="Assets\Pro Standard Assets\Image Based\NoiseEffectShaderRGB.shader" />
      <None Include="Assets\Standard Assets\Blob-Shadow\ShadowProjection.shader" />
      <None Include="Assets\seaFoamCoast\foamShaderGlow.shader" />
+     <None Include="Assets\Standard Assets\Inventory\Credits + C#.txt" />
      <None Include="Assets\Pro Standard Assets\Image Based\MotionBlur.shader" />
      <None Include="Assets\Pro Standard Assets\Image Based\Contrast Stretch\MinMaxReduction.shader" />
      <None Include="Assets\Scripts\Particle Alpha Blend goodfog.shader" />
