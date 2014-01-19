@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class GameObjectList : MonoBehaviour {
-	public Item[] prefabs;
+	public Transform[] prefabs;
 
 	public Dictionary<string, Item> itemPresets;
 

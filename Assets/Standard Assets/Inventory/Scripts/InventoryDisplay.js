@@ -27,7 +27,7 @@ var canBeDragged = true; //Can the Inventory window be dragged?
 var onOffButton : KeyCode = KeyCode.I; //The button that turns the Inventory window on and off.
 
 //Keeping track of components.
-protected var associatedInventory : Inventory;
+private var associatedInventory : Inventory;
 private var cSheetFound = false;
 private var cSheet : Character;
 

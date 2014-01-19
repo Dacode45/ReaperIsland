@@ -47,9 +47,12 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\GameObjectList.cs" />
+     <Compile Include="Assets\ReaperGui\RAllItemsDisplay.cs" />
+     <Compile Include="Assets\ReaperGui\RICharacter.cs" />
+     <Compile Include="Assets\ReaperGui\RIGuiWrapper.cs" />
      <Compile Include="Assets\ReaperGui\RIWindowDisplay.cs" />
+     <Compile Include="Assets\ReaperGui\RInventory.cs" />
      <Compile Include="Assets\ReaperGui\RInventoryDisplay.cs" />
-     <Compile Include="Assets\ReaperGui\RInventoryDisplay1.cs" />
      <Compile Include="Assets\Sample Assets\2D\Scripts\Camera2DFollow.cs" />
      <Compile Include="Assets\Sample Assets\2D\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Sample Assets\2D\Scripts\Platformer2DUserControl.cs" />

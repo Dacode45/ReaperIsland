@@ -543,8 +543,8 @@ Transform:
   m_LocalPosition: {x: 1043.0304, y: 51.1094742, z: 692.81958}
   m_LocalScale: {x: 1.69211018, y: 1.69211018, z: 1.69211018}
   m_Children:
-  - {fileID: 1630366952}
   - {fileID: 1729133871}
+  - {fileID: 952970191}
   - {fileID: 148461868}
   - {fileID: 56}
   - {fileID: 54}
@@ -36242,7 +36242,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e89395a0cd1193c2a000bcda8f962b59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  generateTriangleStrips: 1
 --- !u!1 &4210
 GameObject:
   m_ObjectHideFlags: 0
@@ -39397,7 +39396,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e89395a0cd1193c2a000bcda8f962b59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  generateTriangleStrips: 1
 --- !u!1 &4425
 GameObject:
   m_ObjectHideFlags: 0
@@ -39463,7 +39461,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e89395a0cd1193c2a000bcda8f962b59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  generateTriangleStrips: 1
 --- !u!1 &4432
 GameObject:
   m_ObjectHideFlags: 0
@@ -39760,7 +39757,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e89395a0cd1193c2a000bcda8f962b59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  generateTriangleStrips: 1
 --- !u!1 &4457
 GameObject:
   m_ObjectHideFlags: 0
@@ -39907,9 +39903,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabs:
-  - {fileID: 11400000, guid: 43cfd8c781afa41a4a2e9cf7f978bd62, type: 2}
-  - {fileID: 11400000, guid: fc793692f7139429a8a405669f756e1e, type: 2}
-  - {fileID: 11400000, guid: 5408d4a4cd63449f6ab00af8e65e701a, type: 2}
+  - {fileID: 400000, guid: 5408d4a4cd63449f6ab00af8e65e701a, type: 2}
+  - {fileID: 400000, guid: fc793692f7139429a8a405669f756e1e, type: 2}
 --- !u!4 &668796243
 Transform:
   m_ObjectHideFlags: 0
@@ -39921,90 +39916,301 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!1 &1630366951
+--- !u!1 &952970190
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 1630366952}
-  - 114: {fileID: 1630366954}
-  - 114: {fileID: 1630366953}
+  - 4: {fileID: 952970191}
+  - 114: {fileID: 952970198}
+  - 114: {fileID: 952970197}
+  - 114: {fileID: 952970196}
+  - 114: {fileID: 952970195}
+  - 114: {fileID: 952970194}
+  - 82: {fileID: 952970193}
+  - 114: {fileID: 952970192}
+  - 114: {fileID: 952970199}
   m_Layer: 0
-  m_Name: ReaperGui
+  m_Name: RGUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1630366952
+--- !u!4 &952970191
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1630366951}
-  m_LocalRotation: {x: 0, y: .117944397, z: 0, w: .993020236}
-  m_LocalPosition: {x: 0, y: .907083631, z: 0}
+  m_GameObject: {fileID: 952970190}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: .295489043, z: 0}
   m_LocalScale: {x: .590978086, y: .590978086, z: .590978086}
   m_Children: []
   m_Father: {fileID: 55}
---- !u!114 &1630366953
+--- !u!114 &952970192
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1630366951}
+  m_GameObject: {fileID: 952970190}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b02f7ba0759ef9b44b0903798c18c1b2, type: 3}
+  m_Script: {fileID: 11500000, guid: f782fed1f9e534ef19a6a16f9f9bc6c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  equipSound: {fileID: 0}
+  pickUpSound: {fileID: 0}
+  dropItemSound: {fileID: 0}
+--- !u!82 &952970193
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 952970190}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: .75
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!114 &952970194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 952970190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a576ee205ec62417e8ae2d3e668d10a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseGame: 0
+  disableMouseLookComponent: 1
+  ThePlayer: {fileID: 55}
+  TheCamera: {fileID: 54}
+  lockUnlockCursor: 1
+--- !u!114 &952970195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 952970190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bf0d8d8db39d20448aadd522f9ec567, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  guiWrapper: {fileID: 0}
   guiMargin: 70
   windowMargin: 15
-  toolbarStrings: []
-  toolBarDisplayed: 0
-  toolbarInt: 0
-  toolbarSize: {x: 100, y: 30}
-  drawGuiArea: 0
-  draggedItemPosition: {x: 0, y: 0}
-  draggedItemSize: {x: 0, y: 0}
-  defaultIcon: {fileID: 0}
   windowName: Master
   windowId: 0
-  windowSize: {x: 100, y: 100}
+  windowSize: {x: 300, y: 500}
   useCustomPosition: 0
   customPosition: {x: 70, y: 400}
   updateListDelay: 9999
   lastUpdate: 0
   UpdatedList: []
-  displayThisInventory: 0
   windowRect:
     serializedVersion: 2
-    x: 200
-    y: 200
+    x: 0
+    y: 0
     width: 108
     height: 130
-  invSkin: {fileID: 0}
+  invSkin: {fileID: 11400000, guid: 7e6ad650aa6804654ac41f0295cb9cf7, type: 2}
   Offset: {x: 7, y: 12}
   canBeDragged: 1
-  onOffButton: 107
-  debugMode: 1
-  associatedInventory: {fileID: 0}
---- !u!114 &1630366954
+  debugMode: 0
+  WeaponSlot: {fileID: 148461868}
+  ArmorSlotName:
+  - Head
+  - Chest
+  - Leg
+  - Weapon
+  - Weapon
+  - Weapon
+  buttonPositions:
+  - serializedVersion: 2
+    x: 12
+    y: 34
+    width: 80
+    height: 80
+  - serializedVersion: 2
+    x: 12
+    y: 120
+    width: 80
+    height: 80
+  - serializedVersion: 2
+    x: 12
+    y: 206
+    width: 80
+    height: 80
+  - serializedVersion: 2
+    x: 99
+    y: 34
+    width: 80
+    height: 80
+  - serializedVersion: 2
+    x: 99
+    y: 120
+    width: 80
+    height: 80
+  - serializedVersion: 2
+    x: 99
+    y: 206
+    width: 80
+    height: 80
+--- !u!114 &952970196
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1630366951}
+  m_GameObject: {fileID: 952970190}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f103a62fa8acd0a4b9f2c8f38dfcde1d, type: 3}
+  m_Script: {fileID: 11500000, guid: b02f7ba0759ef9b44b0903798c18c1b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  guiWrapper: {fileID: 0}
+  guiMargin: 70
+  windowMargin: 15
+  windowName: Master
+  windowId: 0
+  windowSize: {x: 300, y: 500}
+  useCustomPosition: 0
+  customPosition: {x: 70, y: 400}
+  updateListDelay: 9999
+  lastUpdate: 0
+  UpdatedList: []
+  windowRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 108
+    height: 130
+  invSkin: {fileID: 11400000, guid: 897dfde19fd7cb749a7cc9eca49fbd35, type: 2}
+  Offset: {x: 7, y: 12}
+  canBeDragged: 1
+  debugMode: 0
+  associatedInventory: {fileID: 0}
+--- !u!114 &952970197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 952970190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7c538ff01184204b9a50ba719e98b0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolbarStrings: []
+  toolBarDisplayed: 0
+  toolbarInt: 0
+  toolbarSize: {x: 400, y: 30}
+  drawGuiArea: 0
+  itemBeingDragged: {fileID: 0}
+  draggedItemPosition: {x: 0, y: 0}
+  draggedItemSize: {x: 0, y: 0}
+  displayThisInventory: 0
+  onOffButton: 107
+--- !u!114 &952970198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 952970190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 079618f3b92501c409f95bc738962aaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Contents: []
   MaxContent: 12
   DebugMode: 0
+--- !u!114 &952970199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 952970190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db06ef79727ba3346bc77a8c16b92a96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  guiWrapper: {fileID: 0}
+  guiMargin: 70
+  windowMargin: 15
+  windowName: Master
+  windowId: 0
+  windowSize: {x: 300, y: 500}
+  useCustomPosition: 0
+  customPosition: {x: 70, y: 400}
+  updateListDelay: 9999
+  lastUpdate: 0
+  UpdatedList: []
+  windowRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 108
+    height: 130
+  invSkin: {fileID: 0}
+  Offset: {x: 7, y: 12}
+  canBeDragged: 1
+  debugMode: 0
 --- !u!1 &1729133864
 GameObject:
   m_ObjectHideFlags: 0
@@ -40065,7 +40271,7 @@ AudioSource:
   rolloffMode: 0
   BypassEffects: 0
   BypassListenerEffects: 0
-  BypassReverbZones: 0
+  BypassReverbZones: 1
   rolloffCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -40230,12 +40436,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70c0efe5123258147a2361a902451552, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  windowSize: {x: 375, y: 162.5}
-  useCustomPosition: 0
-  customPosition: {x: 70, y: 400}
-  itemIconSize: {x: 60, y: 60}
-  updateListDelay: 9999
-  invSkin: {fileID: 0}
-  Offset: {x: 7, y: 12}
-  canBeDragged: 1
-  onOffButton: 105

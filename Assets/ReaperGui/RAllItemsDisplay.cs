@@ -1,28 +1,25 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-[AddComponentMenu("Inventory/RInventory Display")]
-[RequireComponent (typeof (RInventory))]
-
-public class RInventoryDisplay : RIWindowDisplay {
-
+[AddComponentMenu("Inventory/RI All Items Display")]
+[RequireComponent(typeof(RInventory))]
+[RequireComponent(typeof(RInventoryDisplay))]
+public class RAllItemsDisplay : RIWindowDisplay {
+	
 	//Keeping track of components.
-	public RInventory associatedInventory;
+	private RInventory associatedInventory ;
 	private bool cSheetFound = false;
-	private RICharacter cSheet;
+	private RICharacter cSheet ;
+	private bool iSheetFound = false;
+	private RInventoryDisplay iSheet; 
 
+	//Store components and adjust the window position.
+	
 	public override void Awake(){
-
-		windowSize = new Vector2(200, 200);
-		windowName = "Inventory";
-		base.Awake();
-	}
-
-	// Use this for initialization
-	public  void Start() {
 		
-
-		associatedInventory = GetComponent<RInventory>();//keepin track of the inventory script
+		windowSize = new Vector2(200, 600);
+		windowName = "All Inventory";
+		associatedInventory=GetComponent<RInventory>();//keepin track of the inventory script
 		if (GetComponent<RICharacter>() != null)
 		{
 			cSheetFound = true;
@@ -33,12 +30,39 @@ public class RInventoryDisplay : RIWindowDisplay {
 			Debug.LogError ("No Character script was found on this object. Attaching one allows for functionality such as equipping items.");
 			cSheetFound = false;
 		}
-		Debug.Log("Inventory Display is "+ windowId);
+		if (GetComponent<RInventoryDisplay>() != null)
+		{
+			iSheetFound = true;
+			iSheet = GetComponent<RInventoryDisplay>();
+		}
+		else
+		{
+			Debug.LogError ("No Character script was found on this object. Attaching one allows for functionality such as equipping items.");
+			iSheetFound = false;
+		}
+		base.Awake();
+	}
 
+	
+	public  void Start() {
+		
+
+		UpdateInventoryList();
+		Debug.Log("All Items Window Display is "+ windowId);
 	}
 
 
 
+	//Update the inv list
+	public override void UpdateInventoryList()
+	{
+		UpdatedList = GameObject.Find("GameController").GetComponent<GameObjectList>().prefabs;
+
+		Debug.Log("Inventory Updated");
+	}
+	
+
+	//Setting up the Inventory window
 	public override void  DisplayWindow(int windowID)
 	{
 		if (canBeDragged == true)
@@ -52,19 +76,14 @@ public class RInventoryDisplay : RIWindowDisplay {
 		foreach(Transform i in UpdatedList) //Start a loop for whats in our list.
 		{
 			Item item=i.GetComponent<Item>();
-			if (cSheetFound) //CSheet was found (recommended)
-			{
-				
+
 				Debug.Log("Item Drag ready");
 				if(GUI.Button(new Rect(currentX,currentY,itemIconSize.x,itemIconSize.y),item.itemIcon))
 				{
 					bool dragitem=true; //Incase we stop dragging an item we dont want to redrag a new one.
 					if(guiWrapper.itemBeingDragged == item) //We clicked the item, then clicked it again
 					{
-						if (cSheetFound)
-						{
-							cSheet.UseItem(item,0,true); //We use the item.
-						}
+						associatedInventory.AddItem(item.transform); //We use the item.
 						ClearDraggedItem(); //Stop dragging
 						dragitem = false; //Dont redrag
 					}
@@ -72,18 +91,13 @@ public class RInventoryDisplay : RIWindowDisplay {
 					{
 						if(dragitem)
 						{
-							if (item.isEquipment == true) //If it's equipment
-							{
-								guiWrapper.itemBeingDragged = item; //Set the item being dragged.
-								guiWrapper.draggedItemSize=itemIconSize; //We set the dragged icon size to our item button size.
-								//We set the position:
-								guiWrapper.draggedItemPosition.y=Screen.height-Input.mousePosition.y-15;
-								guiWrapper.draggedItemPosition.x=Input.mousePosition.x+15;
-							}
-							else
-							{
-								i.GetComponent<ItemEffect>().UseEffect(); //It's not equipment so we just use the effect.
-							}
+							
+							guiWrapper.itemBeingDragged = item; //Set the item being dragged.
+							guiWrapper.draggedItemSize=itemIconSize; //We set the dragged icon size to our item button size.
+							//We set the position:
+							guiWrapper.draggedItemPosition.y=Screen.height-Input.mousePosition.y-15;
+							guiWrapper.draggedItemPosition.x=Input.mousePosition.x+15;
+
 						}
 					}
 					else if (Event.current.button == 1) //If it was a right click we want to drop the item.
@@ -91,21 +105,7 @@ public class RInventoryDisplay : RIWindowDisplay {
 						associatedInventory.DropItem(item);
 					}
 				}
-			}
-			else //No CSheet was found (not recommended)
-			{
-				if(GUI.Button(new Rect(currentX,currentY,itemIconSize.x,itemIconSize.y),item.itemIcon))
-				{
-					if (Event.current.button == 0 && item.isEquipment != true) //Check to see if it was a left click.
-					{
-						i.GetComponent<ItemEffect>().UseEffect(); //Use the effect of the item.
-					}
-					else if (Event.current.button == 1) //If it was a right click we want to drop the item.
-					{
-						associatedInventory.DropItem(item);
-					}
-				}
-			}
+
 			
 			if(item.stackable) //If the item can be stacked:
 			{
@@ -123,14 +123,7 @@ public class RInventoryDisplay : RIWindowDisplay {
 				}
 			}
 		}
-		
 
 	}
-	
-	//Update the inv list Needs to be Overwridden
-	public override void UpdateInventoryList()
-	{
-		UpdatedList = associatedInventory.Contents;
-		//Debug.Log("Inventory Updated");
-	}
 }
+

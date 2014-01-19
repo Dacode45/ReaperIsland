@@ -2,7 +2,9 @@ fileFormatVersion: 2
 guid: 890283e181e35db48a06a585472e832c
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - defaultIcon: {fileID: 2800000, guid: 9d86ab89e7d1244478877bcb70164ef3, type: 3}
+  - invSkin: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

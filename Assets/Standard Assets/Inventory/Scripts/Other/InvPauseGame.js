@@ -26,7 +26,7 @@ private var lookAround02 : Behaviour;
 //Checking for the Inventory object and loading in components.
 function Awake () 
 {
-	if (transform.name != "Inventory")
+	if (transform.name != "Inventory" && transform.name != "RGUI")
 	{
 		Debug.LogError("A 'InvPauseGame' script is attached to " + transform.name + ". It needs to be attached to an 'Inventory' object.");
 	}

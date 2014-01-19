@@ -13,7 +13,7 @@ var dropItemSound : AudioClip;
 function Awake ()
 {
 	//This is where we check if the script is attached to the Inventory.
-	if (transform.name != "Inventory")
+	if (transform.name != "Inventory" && transform.name != "RGUI")
 	{
 		Debug.LogError("An InvAudio script is placed on " + transform.name + ". It should only be attached to an 'Inventory' object");
 	}
