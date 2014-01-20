@@ -11,7 +11,7 @@ public class FirstPersonHeadBob : MonoBehaviour {
 	[SerializeField] Transform head;							// the object to which the head-bob movement should be applied
 
 	// these modulate the head bob movement
-	[SerializeField] float headBobFrequency = 1.5f;				// the base speed of the head bobbing (in cycles per metre)
+	[SerializeField] public float headBobFrequency = 1.5f;				// the base speed of the head bobbing (in cycles per metre)
 	[SerializeField] float headBobHeight = 0.3f;				// the height range of the head bob
 	[SerializeField] float headBobSwayAngle = 0.5f;				// the angle which the head tilts to left & right during the bob cycle
 	[SerializeField] float headBobSideMovement = 0.05f;			// the distance the head moves to left & right during the bob cycle
@@ -51,7 +51,7 @@ public class FirstPersonHeadBob : MonoBehaviour {
 
 
 	// Use this for initialization
-	void Start () {
+	public void Start () {
 
 		originalLocalPos = head.localPosition;
 		character = GetComponent<FirstPersonCharacter>();
@@ -67,7 +67,7 @@ public class FirstPersonHeadBob : MonoBehaviour {
 
 	
 	// Update is called once per frame
-	void FixedUpdate () {
+	public void FixedUpdate () {
 
 		// we use the actual distance moved as the velocity since last frame, rather than reading
 		//the rigidbody's velocity, because this prevents the 'running against a wall' effect.

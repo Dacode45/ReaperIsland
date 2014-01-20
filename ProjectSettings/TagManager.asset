@@ -6,8 +6,14 @@ TagManager:
   - Item
   - Dangerous
   - Smelly
-  - 
+  - AboveWater
   - Fire
+  - UnderWater
+  - Seagull
+  - Seagull3
+  - Seagull2
+  - Seagull1
+  - Seagull4
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX

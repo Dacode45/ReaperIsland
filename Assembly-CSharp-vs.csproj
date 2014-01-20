@@ -47,6 +47,8 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\GameObjectList.cs" />
+     <Compile Include="Assets\RFirstPersonControls\RFirstPersonCharacter.cs" />
+     <Compile Include="Assets\RFirstPersonControls\RFirstPersonHeadBob.cs" />
      <Compile Include="Assets\ReaperGui\RAllItemsDisplay.cs" />
      <Compile Include="Assets\ReaperGui\RICharacter.cs" />
      <Compile Include="Assets\ReaperGui\RIGuiWrapper.cs" />
@@ -142,8 +144,14 @@
      <Compile Include="Assets\Sample Assets\Utility\WaypointCircuit.cs" />
      <Compile Include="Assets\Sample Assets\Utility\WaypointProgressTracker.cs" />
      <Compile Include="Assets\Scripts\OldCombineChildren.cs" />
+     <Compile Include="Assets\watermanip\CausticProject.cs" />
+     <Compile Include="Assets\watermanip\CausticTerrain.cs" />
+     <Compile Include="Assets\watermanip\RUnderWaterEffects.cs" />
+     <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
      <None Include="Assets\Pro Standard Assets\Glass Refraction\Glass-Stained-BumpDistort.shader" />
      <None Include="Assets\Pro Standard Assets\Image Based\NoiseEffectShaderRGB.shader" />
+     <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Multiply.shader" />
+     <None Include="Assets\watermanip\CustomProjectorAddativeShader.shader" />
      <None Include="Assets\Sample Assets\Effects\Light Shafts\Shaders\SamplePositions.shader" />
      <None Include="Assets\Standard Assets\Blob-Shadow\ShadowProjection.shader" />
      <None Include="Assets\seaFoamCoast\foamShaderGlow.shader" />
@@ -166,15 +174,16 @@
      <None Include="Assets\Pro Standard Assets\Image Based\SSAOShader.shader" />
      <None Include="Assets\Sample Assets\Effects\Particle Systems\Particle Systems Guidelines.txt" />
      <None Include="Assets\Pro Standard Assets\Image Based\NoiseEffectShaderYUV.shader" />
+     <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Light.shader" />
      <None Include="Assets\Pro Standard Assets\Image Based\GlowEffectDownsample.shader" />
-     <None Include="Assets\Standard Assets\Water 1\Sources\FX-Water Simple.shader" />
+     <None Include="Assets\Standard Assets\Prefabs\Water 1\Sources\FX-Water Simple.shader" />
      <None Include="Assets\seaFoamCoast\ReflFix.shader" />
      <None Include="Assets\Sample Assets\Cross Platform Input\Cross Platform Input Guidelines.txt" />
-     <None Include="Assets\Water\FX-UnderwaterSurface.shader" />
+     <None Include="Assets\Pro Standard Assets\Water\FX-UnderwaterSurface.shader" />
      <None Include="Assets\Sample Assets\Effects\Particle Systems\Shaders\Priority Particle Add (Soft).shader" />
      <None Include="Assets\Pro Standard Assets\Image Based\Contrast Stretch\Luminance.shader" />
-     <None Include="Assets\Pro Standard Assets\Water\Sources\FX-Water.shader" />
-     <None Include="Assets\Water\FX-IslandWaterFull.shader" />
+     <None Include="Assets\Pro Standard Assets\Water\FX-Water.shader" />
+     <None Include="Assets\Pro Standard Assets\Water\FX-IslandWaterFull.shader" />
      <None Include="Assets\seaFoamCoast\foamShader.shader" />
      <None Include="Assets\Pro Standard Assets\Image Based\ColorCorrectionEffect.shader" />
      <None Include="Assets\Pro Standard Assets\Image Based\GrayscaleEffect.shader" />
@@ -185,6 +194,7 @@
      <None Include="Assets\Sample Assets\Effects\Shaders\Mobile-Spec.shader" />
      <None Include="Assets\Sample Assets\Characters and Vehicles\Car\Car Guidelines.txt" />
      <None Include="Assets\Sample Assets\Characters and Vehicles\Third Person Character\Third Person Character Guidelines.txt" />
+     <None Include="Assets\watermanip\CausticTerrainShader.shader" />
      <None Include="Assets\Standard Assets\Water\Sources\FX-Water NonReflect.shader" />
      <None Include="Assets\Sample Assets\Cameras\Camera Guidelines.txt" />
      <None Include="Assets\Sample Assets\Effects\Light Shafts\Shaders\Raymarch.shader" />
@@ -195,7 +205,7 @@
      <None Include="Assets\Birds\Heron\Vegetation-TwoPass.shader" />
      <None Include="Assets\Sample Assets\Effects\Light Shafts\Light Shafts Guidelines.txt" />
      <None Include="Assets\Sample Assets\Effects\Particle Systems\Shaders\Priority Particle Add.shader" />
-     <None Include="Assets\Water\FX-IslandWaterSimple.shader" />
+     <None Include="Assets\Pro Standard Assets\Water\FX-IslandWaterSimple.shader" />
      <None Include="Assets\Pro Standard Assets\Image Based\EdgeDetectX.shader" />
      <None Include="Assets\Sample Assets\Effects\Light Shafts\Shaders\ColorFilter.shader" />
  <Reference Include="Assembly-UnityScript-firstpass">

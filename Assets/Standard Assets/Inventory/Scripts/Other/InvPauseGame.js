@@ -35,10 +35,10 @@ function Awake ()
 	{
 		if (ThePlayer != null && TheCamera != null)
 		{
-			if (ThePlayer.GetComponent("MouseLook") != null && TheCamera.GetComponent("MouseLook") != null)
+			if (ThePlayer.GetComponent("SimpleMouseRotator") != null && TheCamera.GetComponent("SimpleMouseRotator") != null)
 			{
-				lookAround01 = ThePlayer.GetComponent("MouseLook");
-				lookAround02 = TheCamera.GetComponent("MouseLook");
+				lookAround01 = ThePlayer.GetComponent("SimpleMouseRotator");
+				lookAround02 = TheCamera.GetComponent("SimpleMouseRotator");
 			}
 			else
 			{

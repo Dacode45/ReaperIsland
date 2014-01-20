@@ -2,14 +2,14 @@
 
 public class FirstPersonCharacter : MonoBehaviour
 {
-	[SerializeField] private float runSpeed = 8f;                                       // The speed at which we want the character to move
-	[SerializeField] private float strafeSpeed = 4f;                                    // The speed at which we want the character to be able to strafe
-    [SerializeField] private float jumpPower = 5f;                                      // The power behind the characters jump. increase for higher jumps
+	[SerializeField] protected float runSpeed = 8f;                                       // The speed at which we want the character to move
+	[SerializeField] protected float strafeSpeed = 4f;                                    // The speed at which we want the character to be able to strafe
+    [SerializeField] protected float jumpPower = 5f;                                      // The power behind the characters jump. increase for higher jumps
 #if !(UNITY_IPHONE || UNITY_ANDROID || UNITY_WP8)
-    [SerializeField] private bool walkByDefault = true;									// controls how the walk/run modifier key behaves.
-	[SerializeField] private float walkSpeed = 3f;                                      // The speed at which we want the character to move
+    [SerializeField] protected bool walkByDefault = true;									// controls how the walk/run modifier key behaves.
+	[SerializeField] protected float walkSpeed = 3f;                                      // The speed at which we want the character to move
 #endif
-    [SerializeField] private AdvancedSettings advanced = new AdvancedSettings();        // The container for the advanced settings ( done this way so that the advanced setting are exposed under a foldout
+    [SerializeField] public AdvancedSettings advanced = new AdvancedSettings();        // The container for the advanced settings ( done this way so that the advanced setting are exposed under a foldout
 
     [System.Serializable]
     public class AdvancedSettings                                                       // The advanced settings
@@ -19,10 +19,10 @@ public class FirstPersonCharacter : MonoBehaviour
         public PhysicMaterial highFrictionMaterial;                                     // Material used for high friction ( can stop character sliding down slopes )
     }
 
-    private CapsuleCollider capsule;                                                    // The capsule collider for the first person character
-    private const float jumpRayLength = 0.7f;                                           // The length of the ray used for testing against the ground when jumping
-	public bool grounded { get; private set; }
-	private Vector2 input;
+    protected CapsuleCollider capsule;                                                    // The capsule collider for the first person character
+    protected const float jumpRayLength = 0.7f;                                           // The length of the ray used for testing against the ground when jumping
+	public bool grounded { get; protected set; }
+	protected Vector2 input;
 
     void Awake ()
 	{
@@ -32,7 +32,7 @@ public class FirstPersonCharacter : MonoBehaviour
 	}
 
 	
-	public void FixedUpdate ()
+	public virtual void FixedUpdate ()
 	{
         // Read input
 		float h = CrossPlatformInput.GetAxis("Horizontal");
