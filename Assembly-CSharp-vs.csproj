@@ -46,6 +46,33 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Fantasy AI 2.0\Scripts\AI\AI.cs" />
+     <Compile Include="Assets\Fantasy AI 2.0\Scripts\AI\CharacterDistanceCulling.cs" />
+     <Compile Include="Assets\Fantasy AI 2.0\Scripts\AI\Dissapearonstart.cs" />
+     <Compile Include="Assets\Fantasy AI 2.0\Scripts\AI\PointLocate.cs" />
+     <Compile Include="Assets\Fantasy AI 2.0\Scripts\AI\Rangedaddon.cs" />
+     <Compile Include="Assets\Fantasy AI 2.0\Scripts\AI\health.cs" />
+     <Compile Include="Assets\Fantasy AI 2.0\Scripts\AI\orderai.cs" />
+     <Compile Include="Assets\Fantasy AI 2.0\Scripts\AI\projectile.cs" />
+     <Compile Include="Assets\Fantasy AI 2.0\Scripts\AI\team.cs" />
+     <Compile Include="Assets\Fantasy AI 2.0\Scripts\Navigation\Gridscript.cs" />
+     <Compile Include="Assets\Fantasy AI 2.0\Scripts\Navigation\Meshsensor.cs" />
+     <Compile Include="Assets\Fantasy AI 2.0\Scripts\Navigation\Navigation.cs" />
+     <Compile Include="Assets\Fantasy AI 2.0\Scripts\Navigation\Navigationalmesh.cs" />
+     <Compile Include="Assets\Fantasy AI 2.0\Scripts\Navigation\Navmeshtarget.cs" />
+     <Compile Include="Assets\Fantasy AI 2.0\Scripts\Navigation\Waypoint.cs" />
+     <Compile Include="Assets\Fantasy AI 2.0\Scripts\Navigation\patrolpath.cs" />
+     <Compile Include="Assets\Fantasy AI 2.0\Scripts\Other\Key.cs" />
+     <Compile Include="Assets\Fantasy AI 2.0\Scripts\Other\Locatorsensor.cs" />
+     <Compile Include="Assets\Fantasy AI 2.0\Scripts\Other\Music.cs" />
+     <Compile Include="Assets\Fantasy AI 2.0\Scripts\Other\PortalLOD.cs" />
+     <Compile Include="Assets\Fantasy AI 2.0\Scripts\Other\Spawner.cs" />
+     <Compile Include="Assets\Fantasy AI 2.0\Scripts\Other\disableai.cs" />
+     <Compile Include="Assets\Fantasy AI 2.0\Scripts\Other\displayhealth.cs" />
+     <Compile Include="Assets\Fantasy AI 2.0\Scripts\Other\doorscript.cs" />
+     <Compile Include="Assets\Fantasy AI 2.0\Scripts\Other\freefly.cs" />
+     <Compile Include="Assets\Fantasy AI 2.0\Scripts\Other\physicsondeath.cs" />
+     <Compile Include="Assets\Fantasy AI 2.0\Scripts\Other\shop.cs" />
      <Compile Include="Assets\GameObjectList.cs" />
      <Compile Include="Assets\RFirstPersonControls\RFirstPersonCharacter.cs" />
      <Compile Include="Assets\RFirstPersonControls\RFirstPersonHeadBob.cs" />
@@ -204,6 +231,7 @@
      <None Include="Assets\Sample Assets\Characters and Vehicles\Rolling Ball\Rolling Ball Guidelines.txt" />
      <None Include="Assets\Birds\Heron\Vegetation-TwoPass.shader" />
      <None Include="Assets\Sample Assets\Effects\Light Shafts\Light Shafts Guidelines.txt" />
+     <None Include="Assets\Fantasy AI 2.0\ReadMe.txt" />
      <None Include="Assets\Sample Assets\Effects\Particle Systems\Shaders\Priority Particle Add.shader" />
      <None Include="Assets\Pro Standard Assets\Water\FX-IslandWaterSimple.shader" />
      <None Include="Assets\Pro Standard Assets\Image Based\EdgeDetectX.shader" />

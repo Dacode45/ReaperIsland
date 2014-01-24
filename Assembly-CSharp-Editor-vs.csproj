@@ -106,6 +106,7 @@
      <None Include="Assets\Sample Assets\Characters and Vehicles\Rolling Ball\Rolling Ball Guidelines.txt" />
      <None Include="Assets\Birds\Heron\Vegetation-TwoPass.shader" />
      <None Include="Assets\Sample Assets\Effects\Light Shafts\Light Shafts Guidelines.txt" />
+     <None Include="Assets\Fantasy AI 2.0\ReadMe.txt" />
      <None Include="Assets\Sample Assets\Effects\Particle Systems\Shaders\Priority Particle Add.shader" />
      <None Include="Assets\Pro Standard Assets\Water\FX-IslandWaterSimple.shader" />
      <None Include="Assets\Pro Standard Assets\Image Based\EdgeDetectX.shader" />

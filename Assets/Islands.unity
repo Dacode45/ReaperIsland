@@ -39984,7 +39984,7 @@ Transform:
   m_PrefabInternal: {fileID: 1988167344}
   m_GameObject: {fileID: 567438874}
   m_LocalRotation: {x: .331723571, y: .0730051622, z: .0730051547, w: .937710047}
-  m_LocalPosition: {x: -1.38964367, y: 1.420784, z: -5.76744223}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 168932577}
@@ -40028,7 +40028,7 @@ Projector:
   m_FarClipPlane: 50
   m_FieldOfView: 180
   m_AspectRatio: 1
-  m_Orthographic: 0
+  m_Orthographic: 1
   m_OrthographicSize: 2
   m_Material: {fileID: 2100000, guid: a9cdb98423c19412bbac43b1fb623c48, type: 2}
   m_IgnoreLayers:
@@ -40969,15 +40969,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400002, guid: b0a1f6772f39e47fdae4d55c17d8ac35, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -1.38964367
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: b0a1f6772f39e47fdae4d55c17d8ac35, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.420784
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: b0a1f6772f39e47fdae4d55c17d8ac35, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -5.76744223
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: b0a1f6772f39e47fdae4d55c17d8ac35, type: 2}
       propertyPath: m_LocalRotation.x
@@ -41009,7 +41009,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: a9cdb98423c19412bbac43b1fb623c48, type: 2}
     - target: {fileID: 11900000, guid: b0a1f6772f39e47fdae4d55c17d8ac35, type: 2}
       propertyPath: m_Orthographic
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11900000, guid: b0a1f6772f39e47fdae4d55c17d8ac35, type: 2}
       propertyPath: m_AspectRatio

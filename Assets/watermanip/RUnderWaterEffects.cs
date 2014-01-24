@@ -13,7 +13,7 @@ public class RUnderWaterEffects : MonoBehaviour {
 	[SerializeField] float normalFogDensity = .002f;
 	[SerializeField] float underwaterFogDensity = .03f;
 	[SerializeField] float lastTimeUnderWater;
-	CausticProject[] causticProjector;
+	CausticProject causticProjector;
 
 
 	// Use this for initialization
@@ -22,7 +22,7 @@ public class RUnderWaterEffects : MonoBehaviour {
 		if(underWaterColor == null) underWaterColor = new Color(0.22f, 0.65f, 0.77f, 0.5f);
 		bubbles = GetComponentInChildren<ParticleSystem>();
 		chMotor = transform.parent.GetComponent<RFirstPersonCharacter>();
-		causticProjector = GetComponentsInChildren<CausticProject>();
+		causticProjector = GetComponentInChildren<CausticProject>();
 		hasBubbles = (bubbles != null);
 		setNormal();
 	}
@@ -72,10 +72,7 @@ public class RUnderWaterEffects : MonoBehaviour {
 		}
 		lastTimeUnderWater = Time.time;
 
-		foreach(CausticProject c in causticProjector){
-			c.gameObject.SetActive(true);
-
-		}
+		causticProjector.gameObject.SetActive(true);
 	}
 
 	void setNormal(){
@@ -86,7 +83,7 @@ public class RUnderWaterEffects : MonoBehaviour {
 			bubbles.Clear();
 		}
 
-		foreach(CausticProject c in causticProjector) c.gameObject.SetActive(false);
+		causticProjector.gameObject.SetActive(false);
 
 	}
 }
