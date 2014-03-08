@@ -46,6 +46,8 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Context.cs" />
+     <Compile Include="Assets\ContextSensor.cs" />
      <Compile Include="Assets\Fantasy AI 2.0\Scripts\AI\AI.cs" />
      <Compile Include="Assets\Fantasy AI 2.0\Scripts\AI\CharacterDistanceCulling.cs" />
      <Compile Include="Assets\Fantasy AI 2.0\Scripts\AI\Dissapearonstart.cs" />
@@ -74,11 +76,19 @@
      <Compile Include="Assets\Fantasy AI 2.0\Scripts\Other\physicsondeath.cs" />
      <Compile Include="Assets\Fantasy AI 2.0\Scripts\Other\shop.cs" />
      <Compile Include="Assets\GameObjectList.cs" />
+     <Compile Include="Assets\Mecanim Warrior Anim Free\Script\PlayGUI.cs" />
+     <Compile Include="Assets\PriorityQueue.cs" />
+     <Compile Include="Assets\RAI.cs" />
+     <Compile Include="Assets\RFirstPersonControls\Buff.cs" />
      <Compile Include="Assets\RFirstPersonControls\RFirstPersonCharacter.cs" />
      <Compile Include="Assets\RFirstPersonControls\RFirstPersonHeadBob.cs" />
+     <Compile Include="Assets\RFirstPersonControls\RStats.cs" />
+     <Compile Include="Assets\RIFirstPersonPickUp.cs" />
+     <Compile Include="Assets\RItem.cs" />
      <Compile Include="Assets\ReaperGui\RAllItemsDisplay.cs" />
      <Compile Include="Assets\ReaperGui\RICharacter.cs" />
      <Compile Include="Assets\ReaperGui\RIGuiWrapper.cs" />
+     <Compile Include="Assets\ReaperGui\RIPlayerOverlay.cs" />
      <Compile Include="Assets\ReaperGui\RIWindowDisplay.cs" />
      <Compile Include="Assets\ReaperGui\RInventory.cs" />
      <Compile Include="Assets\ReaperGui\RInventoryDisplay.cs" />
@@ -211,6 +221,7 @@
      <None Include="Assets\Pro Standard Assets\Image Based\Contrast Stretch\Luminance.shader" />
      <None Include="Assets\Pro Standard Assets\Water\FX-Water.shader" />
      <None Include="Assets\Pro Standard Assets\Water\FX-IslandWaterFull.shader" />
+     <None Include="Assets\SkeletonData\animations.txt" />
      <None Include="Assets\seaFoamCoast\foamShader.shader" />
      <None Include="Assets\Pro Standard Assets\Image Based\ColorCorrectionEffect.shader" />
      <None Include="Assets\Pro Standard Assets\Image Based\GrayscaleEffect.shader" />

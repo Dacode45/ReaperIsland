@@ -1,22 +1,20 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\watermanip\CausticProject.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\RFirstPersonControls\RFirstPersonCharacter.cs">
     <Files>
-      <File FileName="Assets\watermanip\CausticProject.cs" Line="5" Column="2" />
-      <File FileName="Assets\watermanip\CausticProject.cs" Line="1" Column="1" />
-      <File FileName="Assets\RFirstPersonControls\RFirstPersonCharacter.cs" Line="1" Column="1" />
-      <File FileName="Assets\Sample Assets\Characters and Vehicles\First Person Character\Scripts\FirstPersonCharacter.cs" Line="1" Column="1" />
-      <File FileName="Assets\Sample Assets\Characters and Vehicles\First Person Character\Scripts\FirstPersonHeadBob.cs" Line="1" Column="1" />
-      <File FileName="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Light.shader" Line="1" Column="1" />
-      <File FileName="Assets\Sample Assets\Utility\SimpleMouseRotator.cs" Line="1" Column="1" />
-      <File FileName="Assets\watermanip\RUnderWaterEffects.cs" Line="25" Column="40" />
-      <File FileName="Assets\Scripts\WaterLightmapFog.js" Line="1" Column="1" />
+      <File FileName="Assets\PriorityQueue.cs" Line="19" Column="27" />
+      <File FileName="Assets\ContextSensor.cs" Line="32" Column="61" />
+      <File FileName="Assets\RItem.cs" Line="1" Column="1" />
+      <File FileName="Assets\RFirstPersonControls\RFirstPersonCharacter.cs" Line="139" Column="45" />
+      <File FileName="Assets\RFirstPersonControls\Buff.cs" Line="1" Column="1" />
+      <File FileName="Assets\RFirstPersonControls\RStats.cs" Line="1" Column="1" />
+      <File FileName="Assets\Standard Assets\Inventory\Scripts\Items\FirstPersonPickUp.js" Line="12" Column="30" />
+      <File FileName="Assets\RIFirstPersonPickUp.cs" Line="1" Column="1" />
+      <File FileName="Assets\Standard Assets\Inventory\Scripts\Items\Item.js" Line="16" Column="1" />
+      <File FileName="Assets\PriorityQueue.cs" Line="19" Column="27" />
+      <File FileName="Assets\ReaperGui\RInventory.cs" Line="17" Column="9" />
+      <File FileName="Assets\Sample Assets\Characters and Vehicles\First Person Character\Scripts\FirstPersonCharacter.cs" Line="107" Column="54" />
     </Files>
-    <Pads>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

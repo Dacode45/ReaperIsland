@@ -14,7 +14,7 @@ public class RInventory : MonoBehaviour {
 	
 	private RInventoryDisplay playersInvDisplay ; //Keep track of the InventoryDisplay script.
 	
-	static public Transform itemHolderObject; //The object the unactive items are going to be parented to. In most cases this is going to be the Inventory object itself.
+	public  Transform itemHolderObject; //The object the unactive items are going to be parented to. In most cases this is going to be the Inventory object itself.
 
 
 		

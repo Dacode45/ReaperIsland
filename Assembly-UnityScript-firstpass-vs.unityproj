@@ -101,6 +101,7 @@
      <None Include="Assets\Pro Standard Assets\Image Based\Contrast Stretch\Luminance.shader" />
      <None Include="Assets\Pro Standard Assets\Water\FX-Water.shader" />
      <None Include="Assets\Pro Standard Assets\Water\FX-IslandWaterFull.shader" />
+     <None Include="Assets\SkeletonData\animations.txt" />
      <None Include="Assets\seaFoamCoast\foamShader.shader" />
      <None Include="Assets\Pro Standard Assets\Image Based\ColorCorrectionEffect.shader" />
      <None Include="Assets\Pro Standard Assets\Image Based\GrayscaleEffect.shader" />
